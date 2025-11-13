@@ -38,6 +38,15 @@ package week1;
  *
  *
  *  Friday day4
+ *
+ *  ThreadPool + ExecutorService / Executors
+ *          1. ThreadPoolExecutor(diff parameters)
+ *              fixedThreadPool
+ *              cachedThreadPool
+ *              scheduledThreadPool
+ *          2. ForkJoinPool
+ *  CountDownLatch + Semaphore
+ *
  *  1. Java 8 new features
  *  2. Stream Api
  *  3. CompletableFuture
