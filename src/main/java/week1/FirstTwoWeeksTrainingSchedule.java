@@ -54,9 +54,11 @@ package week1;
  *
  *
  *  Day5
+ *  CompletableFuture
+ *  Design Patterns
  *  1. Design Patterns
  *  2. reflection / dynamic proxy
- *
+
  *  Day6
  *  1. Network / server concept
  *      OSI model
