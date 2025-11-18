@@ -73,6 +73,8 @@
  *  Day7
  *  1. Spring IOC , AOP
  *  2. Spring Boot
+        Spring MVC + Tomcat
+        thread safety
  *  3. Rest api Design
  *  Day8
  *  1. Rest api Impl / example / practice

@@ -66,5 +66,65 @@ package week2;
 
 /**
  *  http
+ *      1. endpoint, api, uri, url: /student
+ *      2. status code: response status
+ *              2xx : success response
+ *              3xx : redirect response
+ *              4xx : client error
+ *              5xx : internal server error
+ *      3. header
+ *              Content-Type: ..
+ *              Accept
+ *              Authorization: security token
+ *              Allow-Method/ Allow-Origin / Allow-Header: CORS..
+ *      4. request body
+ *              {
+ *                  "name": "Tom"
+ *              }
+ *      5. response body
+ *              data response
+ *              error response
+ *      6. method
+ *              get: read data
+ *              post: create data
+ *              put: update data (whole resource)
+ *              patch: update partial data
+ *              delete: delete data
+ *              head: success but not response body
+ *              ..
+ *      7. ...
+ *
  *  https = http + ssl / tls
+ *
+ *  CA = certificate authority
+ *  Asymmetric key = Public key + Private key
+ *  Symmetric key = one key for both encryption and decryption
+ *
+ *  one way ssl
+ *  client     ->  hello ->  server(hold private key)
+ *     <- certificate(contains public key) <-
+ *        use root CA to verify it
+ *        public key[random string] ->
+ *            <- hash[random string]
+ *             generate symmetric key
+ *            ->  symmetric key[data] ->
+ *            <-  symmetric key[data] <-
+ *
+ *
+ *  two way ssl / two way tls / mTLS
+ *  1. use library / 3rd party company to get root CA
+ *  2. generate certificate using root CA
+ *  3. send / share certificate with other server / user
+ *  4. user -> bring certificate with request -> your server will verify it ..
+ *
+ *
+ *  Oauth2.0
+ *  browser -> 3rd party login
+ *     |
+ *   app
+ *
+ *   1. 3rd party login  -> redirect to url?access_code=xxx
+ *   2. browser send code to app
+ *   3. app -> verify code with 3rd party login
+ *
  */
