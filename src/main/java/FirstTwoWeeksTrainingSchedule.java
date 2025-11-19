@@ -77,7 +77,9 @@
         thread safety
  *  3. Rest api Design
  *  Day8
- *  1. Rest api Impl / example / practice
+ *  1. Rest api Design
+ *  2. Rest api Impl / example / practice
+ *          send request -> 3rd party api
  *  Day9
  *  1. review first 2 weeks topic
  *  2. DB
