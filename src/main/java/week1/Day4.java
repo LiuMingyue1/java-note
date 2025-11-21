@@ -33,6 +33,8 @@ import java.util.stream.IntStream;
  *  CountDownLatch
  *  Semaphore
  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+ *  BlockingQueue
+ *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
  *  new HashMap<>()
  *  1. load HashMap class object into jvm
  *  2. create hashmap instance

@@ -261,7 +261,8 @@ class Day5Calculator1 {
     }
 }
 /**
- *      Composition
+ *      Composition : has - A
+ *      Inheritance : is - A
  */
 class Day5Calculator2 {
     private Calculator calculator;
