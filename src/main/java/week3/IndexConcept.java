@@ -61,6 +61,27 @@
  *      3. parallel
  *      4. use_nl, use_hash, use_merge
  *      5. leading
+ *
+ * How to tune db performance/query performance
+ * 1. query tuning + index
+ *       execution plan + statistics
+ *       1. check index usage / type
+ *       2. add query hint
+ *              index access path
+ *              join strategies
+ *              full table scan
+ *              ..
+ *    material view
+ *    de-normalization
+ * 2. vertical scaling
+ * 3. horizontal scaling : add more read db
+ *      write db + multiple read db
+ * 3. add cache
+ *      global cache (redis)
+ *      local cache(spring boot result cache)
+ *      load balancer cache
+ *      ...
+ * 4. sharding / partition
  */
 
 //select /*+ full(e) parallel(10) */ * from hr.employees e where employee_id > 200
