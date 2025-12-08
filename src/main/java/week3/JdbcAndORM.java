@@ -76,6 +76,7 @@ package week3;
  *  3. cache (persistent context + first level + second level cache)
  *  4. focus on object / object mapping
  *  5. connection pool
+ *  6. criteria query / dynamic query
  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
  *  how to create orm / use orm
  *  1. add dependencies : spring boot starter jpa
