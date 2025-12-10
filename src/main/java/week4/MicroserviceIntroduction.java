@@ -52,20 +52,48 @@ package week4;
  *          2. get ip3, ip4, ip5 -> pick one (spring cloud ribbon client side load balancing)
  *          3. restTemplate.getForObject("https://ip5/uri", X.class);
  *      5. public subnet, private subnet VPC
+ *          how does private subnet access public network
+ *          how do we access instances in private subnet from public network
+ *          nacl vs security group
  *      6. cache
- *          a. CDN
+ *          a. CDN: video / page / image / ...
+ *              customer -> edge location ->  endpoint
+ *              udemy: index file - cdn url1, cdn url2, cdn url3
  *          b. Global Cache
  *          c. Local Cache
  *      7. Message queue
+ *          a. sqs / sns
+ *          b. kafka
+ *          c. rabbit mq / active mq
  *      8. DB
  *          a. nosql
+ *              json / column based db / key value
+ *              sharding / partition
  *          b. rdbms
- *          c. elastic search
- *          e. object storage
+ *              strong acid , transaction
+ *              stable / for bank / enterprise company
+ *              join / normalization
+ *              table structure / strict schema
+ *          c. elastic search: document search
+ *          select
+ *          from
+ *          where description like "%lightweight%"
+ *
+ *          word1   -> doc1, doc2, doc10
+ *          word2   -> doc1, doc10
+ *          word3   -> doc11
+ *
+ *          e. object storage: S3 ---life cycle hook--> S3 Glacier
+ *              cannot create customized index in s3
+ *              history version
+ *              immutable object
  *          f. file system
  *      9. serverless in AWS
+ *          lambda: microVM
  *      10. deployment / CI,CD / docker
- *      ...
+ *      11. monitor
+ *      12. testing
+ *
  *
  *
  *
