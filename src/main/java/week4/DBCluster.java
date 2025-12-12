@@ -53,7 +53,44 @@ package week4;
  *      soft stage
  *      eventually consistency
  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
- *  Cassandra
+ *  Cassandra Node
  *
- *  Message queue
+ *      -->  memtable (memory) --> SSTable (sorted string table / immutable)
+ *          |
+ *       commit log (disk)
+ *
+ *
+ *       read -> blooming filter -> SSTable1, 2, 3, 4, 5 ....
+ *
+ *
+ *  Cassandra Cluster
+ *
+ *          Node1 0
+ *
+ *  Node4           Node2 10k
+ *  40k
+ *
+ *         Node3 20k
+ *
+ *    Replica Factor = 3
+ *    Read Consistency = 2
+ *    Write Consistency = 2
+ *
+ *    rc + wc > rf
+ *
+ *    example:
+ *    read -> node1(redirect to other nodes) -> node2 + node3
+ *                  read all data from node2
+ *                  read hashing value from node3
+ *                          if same hash value r
+ *                              return to user
+ *                          else
+ *                              trigger read repair node2 + node3
+ *
+ *   write -> node1(redirect to other nodes) -> node2, 3, 4
+ *                 send write request to all 3 nodes
+ *                 if N of nodes reply success response
+ *                      return success to user
+ *                 else
+ *                      return fail response
  */
